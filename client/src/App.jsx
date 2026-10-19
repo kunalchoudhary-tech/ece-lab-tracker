@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from "react";
 
-const API = import.meta.env.VITE_API_URL || "http://localhost:5001";
+const API = import.meta.env.VITE_API_URL || "https://ece-lab-tracker-1.onrender.com";
 
 async function api(path, { method = "GET", body, token } = {}) {
   const res = await fetch(`${API}/api${path}`, {
